@@ -37,8 +37,6 @@ public class Consumer : IHostedService
 
     public Task StartAsync(CancellationToken cancellationToken)
     {
-        Task.Delay(5, cancellationToken);
-        
         _timer = new Timer(
             _ => SendMail(),
             null,
