@@ -1,27 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Receiver-F8C50FD2-479B-440C-A683-FA07DAC46FCB</UserSecretsId>
+        <RootNamespace>Receiver</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\RabbitMqServices\RabbitMqServices.csproj" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+        <PackageReference Include="Serilog" Version="2.12.0" />
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="7.0.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
-      <PackageReference Include="Serilog.Extensions.Hosting" Version="7.0.0" />
-      <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
-      <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+      <ProjectReference Include="..\RabbitMqShared\RabbitMqShared.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-        <None Include="../appsettings.json">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-    </ItemGroup>
-
 </Project>

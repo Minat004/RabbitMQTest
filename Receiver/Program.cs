@@ -1,12 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using RabbitMqServices;
+using RabbitMqShared.Services;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
-    .CreateBootstrapLogger();
+    .MinimumLevel.Debug()
+    .CreateLogger();
 
 var host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration(config =>
@@ -18,6 +16,7 @@ var host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
         services.AddHostedService<Consumer>();
+        services.AddSingleton<IMailService, MailService>();
     })
     .UseSerilog()
     .Build();
