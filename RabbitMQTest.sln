@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqShared", "RabbitMqShared\RabbitMqShared.csproj", "{D18AF098-1601-46A7-93B4-AE3AECB565FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendMailApi", "SendMailApi\SendMailApi.csproj", "{B157E9C0-804C-4527-B307-A552B17B3258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "Receiver\Receiver.csproj", "{878F9E49-B245-46A3-944B-A3BFCB0C930D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D18AF098-1601-46A7-93B4-AE3AECB565FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18AF098-1601-46A7-93B4-AE3AECB565FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18AF098-1601-46A7-93B4-AE3AECB565FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18AF098-1601-46A7-93B4-AE3AECB565FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B157E9C0-804C-4527-B307-A552B17B3258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B157E9C0-804C-4527-B307-A552B17B3258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B157E9C0-804C-4527-B307-A552B17B3258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B157E9C0-804C-4527-B307-A552B17B3258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{878F9E49-B245-46A3-944B-A3BFCB0C930D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{878F9E49-B245-46A3-944B-A3BFCB0C930D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{878F9E49-B245-46A3-944B-A3BFCB0C930D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{878F9E49-B245-46A3-944B-A3BFCB0C930D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
