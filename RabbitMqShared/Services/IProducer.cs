@@ -1,4 +1,4 @@
-﻿namespace RabbitMqServices;
+﻿namespace RabbitMqShared.Services;
 
 public interface IProducer
 {
